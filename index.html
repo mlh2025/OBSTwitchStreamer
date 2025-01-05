@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <title>OBS Twitch Streamer</title>
+  </head>
+  <body>
+      <h1>OBS Twitch Streamer</h1>
+      <h4>
+          We are using Node.js <span id="node-version"></span>,
+          Chromium <span id="chrome-version"></span>,
+          and Electron <span id="electron-version"></span>.
+      </h4>
+
+      <label id="streamKeyLabel">Twitch stream key:</label>
+      <input type="text" id="streamKey" name="streamKey" size="50" value="live_1223689360_ZhNRuxJXo8TjAHYYhJKm1x3KrU75nf"><br><br>
+      <button id="setBtn" name="setBtn">Initialize with Stream Key</button><br /><br />
+      <button id="startBtn" name="startBtn">Start Streaming</button><br /><br />
+      <button id="stopBtn" name="stopBtn">Stop Streaming</button>
+      <br /><br />
+      <label id="statusLabel">Current Status: </label>
+      <input type="text" id="statusText" name="statusText" size="50" value="Waiting..." disabled = true/>
+
+      <!-- You can also require other files to run in this process -->
+      <script src="./renderer.js"></script>
+  </body>
+</html >
