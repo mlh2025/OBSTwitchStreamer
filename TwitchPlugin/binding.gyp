@@ -11,14 +11,7 @@
 			"library_dirs": ["<(module_root_dir)/libs"]
 			},
 		'defines': ['NAPI_DISABLE_CPP_EXCEPTIONS'],
-		"copies": 
-		[
-			{
-			"destination": "../bin/",
-			"files": ["<(module_root_dir)/build/Release/TwitchPlugin.node"]
-			}
-        ]
-
+		
 		}
     ]
 }
